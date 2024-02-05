@@ -1,3 +1,4 @@
+import 'package:bloc_test_app/blocs/add_user_bloc/add_user_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../blocs/get_user_bloc/get_user_bloc.dart';
@@ -21,7 +22,7 @@ class App extends StatelessWidget {
               create: (_) =>  GetUserBloc(userService: userService)..add(GetUser()),
             ),
             BlocProvider(
-              create: (_) =>  AddNewUserBloc(userService: UserService),
+              create: (_) =>  AddNewUserBloc(userService: userService),
             ),
             BlocProvider(
               create: (_) =>  UpdateUserBloc(userService: UserService),
