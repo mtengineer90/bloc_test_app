@@ -1,6 +1,8 @@
 import 'package:bloc_test_app/blocs/add_user_bloc/add_user_bloc.dart';
+import 'package:bloc_test_app/presentation/views/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../blocs/delete_user_bloc/delete_user_bloc.dart';
 import '../blocs/get_user_bloc/get_user_bloc.dart';
 import '../blocs/get_user_bloc/get_user_event.dart';
 import '../blocs/update_user_bloc/update_user_bloc.dart';
@@ -36,7 +38,6 @@ class App extends StatelessWidget {
     );
   }
 }
-
 
 class AppView extends StatelessWidget {
   const AppView({super.key});

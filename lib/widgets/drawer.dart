@@ -2,6 +2,7 @@ import 'package:bloc_test_app/presentation/views/UpdateUserPage.dart';
 import 'package:flutter/material.dart';
 
 import '../presentation/views/AddUserPage.dart';
+import '../presentation/views/DeleteUserPage.dart';
 import '../presentation/views/HomePage.dart';
 
 class SideDrawer extends StatelessWidget {
@@ -47,7 +48,7 @@ class SideDrawer extends StatelessWidget {
                       title: const Text("Delete User",style: TextStyle(
                           color: Colors.white,  fontSize: 15)),
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=> const DeleteUserView()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=> const DeleteUserPage()));
                       }
                   ),
                 ]
