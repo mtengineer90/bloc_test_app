@@ -6,7 +6,7 @@ import '../models/user_new.dart';
 import 'dio_client.dart';
 import 'dio_exceptions.dart';
 
-class CrudService{
+class UserService{
   Future<NewUser> addNewUser(String name, String job) async {
     try{
       final response = await DioClient.instance.post(
