@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../blocs/get_user_bloc/get_user_bloc.dart';
 import '../blocs/get_user_bloc/get_user_event.dart';
+import '../blocs/update_user_bloc/update_user_bloc.dart';
 import '../repositories/user_service.dart';
 
 
@@ -25,10 +26,10 @@ class App extends StatelessWidget {
               create: (_) =>  AddNewUserBloc(userService: userService),
             ),
             BlocProvider(
-              create: (_) =>  UpdateUserBloc(userService: UserService),
+              create: (_) =>  UpdateUserBloc(userService: userService),
             ),
             BlocProvider(
-              create: (_) =>  DeleteUserBloc(userService: UserService),
+              create: (_) =>  DeleteUserBloc(userService: userService),
             ),
           ],
           child: const AppView()),
